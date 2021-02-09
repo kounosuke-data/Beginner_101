@@ -1,0 +1,12 @@
+#入力を文字列で受け取る
+s = input()
+
+#文字列を数え、1個ずつ見ていく。+なら+1、-なら-1をする
+ans = 0
+
+for i in range(len(s)):
+    if s[i] == "+":
+        ans += 1
+    elif s[i] == "-":
+        ans -= 1
+print(ans)

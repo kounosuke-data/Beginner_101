@@ -1,0 +1,13 @@
+#入力をstr型で受け取る
+n = input()
+
+#各桁の和を計算する
+num = 0
+for i in range(len(n)):
+    num += int(n[i])
+
+#割り切れるならYes, 割り切れないならNoを出力
+if int(n)%num == 0:
+    print("Yes")
+else:
+    print("No")

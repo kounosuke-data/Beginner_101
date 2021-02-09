@@ -1,0 +1,9 @@
+#n, kを数値として受け取る
+n, k = map(int, input().split())
+
+#aをリストとして受け取る
+a = list(map(int, input().split()))
+
+#1以外のnの数を数える。それをk-1で割ると何回やるかが分かる
+import math
+print(math.ceil((n-1)/(k-1)))
